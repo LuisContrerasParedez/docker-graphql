@@ -25,9 +25,8 @@ jobs:
 
     - name: Build Docker Image 
       run: |
-        ls -la # Verifica los archivos y directorios presentes
-        docker build -t luis379/docker_graphql:0.0.2 -f Dockerfile .
+        docker build -t luis379/docker_graphql:0.0.2
       
     - name: Push Docker Image 
       run: |
-        docker push luis379/docker_graphql:0.0.2 .
+        docker push luis379/docker_graphql:0.0.2
