@@ -25,7 +25,7 @@ jobs:
 
     - name: Build Docker Image 
       run: |
-        docker build -t luis379/docker_graphql:0.0.2
+        docker buildx build -t luis379/docker_graphql:0.0.2
       
     - name: Push Docker Image 
       run: |
